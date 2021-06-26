@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+
+<form action = "{{name}}" method = "post">{% csrf_token%}
+    <h2>Enter the title for: </h2><input type = "text" name = "title"><br><br>
+    <h2>Enter body text: </h2>
+    <textarea id="" name="new" >
+  
+    </textarea>
+    <input type="submit" value="Create entry">
+</form>
+
+
+{% endblock %}
